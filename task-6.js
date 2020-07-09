@@ -1,22 +1,15 @@
 
-let input;
+let input = +prompt();
 let total = 0;
-let userInput = prompt('Введите число');
-let sum = total+Number.parseInt(userInput);
-
-// if(userInput) {
-//   sum = total+Number.parseInt(userInput);
-// } else if () {
-
-// }
 
 
-if (userInput) {
-  sum = `Сумма равна ${sum}`;
-} else {
-  alert(`Общая сумма чисел равна ${sum}`)
-}
-console.log(sum);
+while (input) {
+  total += input;
+  input = +prompt();
+};
+  alert('Общая сумма чисел равна [' + total +']')
+
+console.log(total);
 
 // Напиши скрипт который просит посетителя ввести число в prompt до тех пор, 
 //пока посетитель на нажмет Cancel и каждый раз добавляет введенное значение к общей сумме.
